@@ -12,9 +12,9 @@ namespace EntityLayer.Concrete
         public string PersonName { get; set; }
         public string Title { get; set; }
         public string ImageUrl { get; set; }
-        public string FacebookUrl { get; set; }
-        public string InstagramUrl { get; set; }
-        public string WesiteUrl { get; set; }
-        public string Twitter { get; set; }
+        public string? FacebookUrl { get; set; }
+        public string? InstagramUrl { get; set; }
+        public string? WesiteUrl { get; set; }
+        public string? Twitter { get; set; }
     }
 }

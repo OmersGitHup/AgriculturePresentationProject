@@ -122,6 +122,10 @@ namespace DataAccsessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -165,7 +169,6 @@ namespace DataAccsessLayer.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TeamID"));
 
                     b.Property<string>("FacebookUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
@@ -173,7 +176,6 @@ namespace DataAccsessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("InstagramUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PersonName")
@@ -185,11 +187,9 @@ namespace DataAccsessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Twitter")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("WesiteUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TeamID");

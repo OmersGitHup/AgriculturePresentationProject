@@ -12,6 +12,12 @@ builder.Services.AddControllersWithViews();
 //catching constructer
 builder.Services.AddScoped<IServiceService,ServiceManager>();
 builder.Services.AddScoped<IServiceDal, EfServiceDal>();
+builder.Services.AddScoped<ITeamService, TeamManager>();
+builder.Services.AddScoped<ITeamDal, EfTeamDal>();
+builder.Services.AddScoped<IAnnouncementService, AnnouncementManager>();
+builder.Services.AddScoped<IAnnouncmentDal, EfAnnouncmentDal>();
+builder.Services.AddScoped<IImageService, ImageManager>();
+builder.Services.AddScoped<IImageDal, EfImageDal>();
 builder.Services.AddDbContext<AgricultureContext>();
 
 var app = builder.Build();

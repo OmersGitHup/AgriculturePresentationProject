@@ -1,0 +1,51 @@
+﻿@model EntityLayer.Concrete.Team
+@{
+    ViewData["Title"] = "EditTeam";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Edit Team Member </h4>
+            @Html.HiddenFor(x=>x.TeamID)
+            <form method="post" class="forms-sample">
+                <div class="form-group">
+                    <label for="exampleInputName1">Name Surname</label>
+                    <span asp-validation-for="PersonName" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Name Surname" asp-for="PersonName">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Title</label>
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                    <input type="text" class="form-control" id="exampleInput2" placeholder="Title" asp-for="Title">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Image Url</label>
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Image Url" asp-for="ImageUrl">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Facebook URL</label>
+                    <input type="text" class="form-control" placeholder="Enter Facebook URL" asp-for="FacebookUrl">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Instagram URL</label>
+                    <input type="text" class="form-control" placeholder="Enter Instagram URL" asp-for="InstagramUrl">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Twitter URL</label>
+                    <input type="text" class="form-control" placeholder="Enter Twitter URL" asp-for="Twitter">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Website URL</label>
+                    <input type="text" class="form-control" placeholder="Enter Website URL" asp-for="WesiteUrl">
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <button href="/Team/Index" class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
