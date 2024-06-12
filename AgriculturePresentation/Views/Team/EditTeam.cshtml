@@ -9,8 +9,9 @@
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">Edit Team Member </h4>
-            @Html.HiddenFor(x=>x.TeamID)
+            
             <form method="post" class="forms-sample">
+                @Html.HiddenFor(x => x.TeamID)
                 <div class="form-group">
                     <label for="exampleInputName1">Name Surname</label>
                     <span asp-validation-for="PersonName" class="text-danger"></span>

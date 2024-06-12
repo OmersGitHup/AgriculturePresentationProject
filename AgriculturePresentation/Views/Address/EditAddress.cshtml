@@ -1,0 +1,53 @@
+﻿@model EntityLayer.Concrete.Address
+@{
+    ViewData["Title"] = "EditAddress";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Edit Address</h4>
+            
+            <form method="post" class="forms-sample">
+                @Html.HiddenFor(x => x.AddressID)
+                <div class="form-group">
+                    <label for="exampleInputName1">Description 1</label>
+                    <span asp-validation-for="Description1" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Description 1" asp-for="Description1">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Description 2</label>
+                    <span asp-validation-for="Description2" class="text-danger"></span>
+                    <input type="text" class="form-control" id="exampleInput2" placeholder="Description 2" asp-for="Description2">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputName1">Description 3</label>
+                    <span asp-validation-for="Description3" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Description 3" asp-for="Description3">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputName1">Description 4</label>
+                    <span asp-validation-for="Description4" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Description 4" asp-for="Description4">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputName1">Map Info</label>
+                    <span asp-validation-for="MapInfo" class="text-danger"></span>
+                    <input type="text" class="form-control" placeholder="Map Info" asp-for="MapInfo">
+                </div>
+
+
+
+                <br />
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <button href="/Address/Index" class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
