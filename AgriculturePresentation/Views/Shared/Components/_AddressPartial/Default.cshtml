@@ -1,0 +1,26 @@
+﻿@using EntityLayer.Concrete
+@model List<Address>
+
+<h3 class="tittle">Contact Us Today !</h3>
+<p class="heading-btm-w3ls">Suspendisse fringilla pellentesque risus sit amet bibendum.</p>
+@foreach (var item in Model)
+{
+    <div class="col-md-3 contact-left">
+        <h4>Our Address</h4>
+        <a href="https://www.google.com/maps/search/@item.Description1,@item.Description2">
+            <p>@item.Description1</p>
+            <p>@item.Description2</p>
+
+
+        </a>
+        <h4>Send Mail</h4>
+        <a href="mailto:@item.Description3"><p>@item.Description3</p></a>
+
+        <h4>Call Us</h4>
+        <a href="tel:@item.Description4">
+            <p>@item.Description4</p>
+        </a>
+
+    </div>
+
+}

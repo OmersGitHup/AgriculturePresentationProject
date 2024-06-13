@@ -11,5 +11,6 @@ namespace BusinessLayer.Abstract
     {
         void AnnouncementStatusToTrue(int id);
         void AnnouncementStatusToFalse(int id);
+        
     }
 }
