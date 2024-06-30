@@ -14,18 +14,16 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Name Surname</th>
-                            <th>Mail</th>
+                            <th>ContactID</th>
+                            <th>Name</th>
                             <th>Message</th>
-                            <th>Detail</th>
+                            <th>Details</th>
                             <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model)
+                        @foreach (var item in Model.OrderByDescending(item => item.ContactID))
                         {
-
                             <tr>
                                 <td>@item.ContactID</td>
                                 <td>@item.Name</td>

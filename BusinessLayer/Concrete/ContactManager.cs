@@ -20,7 +20,7 @@ namespace BusinessLayer.Concrete
 
         public void Delete(Contact t)
         {
-            throw new NotImplementedException();
+            _contactDal.Delete(t);
         }
 
         public Contact GetById(int id)
