@@ -1,0 +1,25 @@
+﻿@* @using EntityLayer.Concrete
+@model List<Contact>
+
+<div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
+    <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+
+
+    @foreach (var item in Model)
+                        {
+            <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="~/MajesticAdmin-Free-Bootstrap-Admin-Template-master/template/images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                    <h6 class="ellipsis font-weight-normal">
+                        @item.Name
+                    </h6>
+                    <p class="font-weight-light small-text text-muted mb-0">
+                        @item.Message
+                    </p>
+                </div>
+            </a>
+        }
+        
+</div> *@

@@ -1,6 +1,8 @@
-﻿using BusinessLayer.Abstract;
+﻿using AgriculturePresentation.Models;
+using BusinessLayer.Abstract;
 using BusinessLayer.ValidationRules;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AgriculturePresentation.Controllers
@@ -8,7 +10,7 @@ namespace AgriculturePresentation.Controllers
     public class ContactController : Controller
     {
         private readonly IContactService _contactService;
-
+       
         public ContactController(IContactService contactService)
         {
             _contactService = contactService;
@@ -32,5 +34,14 @@ namespace AgriculturePresentation.Controllers
             var value=_contactService.GetById(id);
             return View(value);
         }
+        [HttpGet]
+        public IActionResult ContactsNavbarMenu()
+        {
+            var values = _contactService.GetListAll();
+
+            return View(values);
+        }
+
+       
     }
 }
