@@ -27,7 +27,7 @@
                     <i class="mdi mdi-message-text mx-0"></i>
                     <span class="count"></span>
                 </a>
-                @await Html.PartialAsync("/Views/Contact/ContactsNavbarMenu.cshtml")
+                @await Component.InvokeAsync("NavBarMessage")
             </li>
             <li class="nav-item dropdown me-4">
                 <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
