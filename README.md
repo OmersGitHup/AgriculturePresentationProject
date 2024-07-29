@@ -9,6 +9,7 @@ This project is a web application designed to provide various services for the a
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Screenshot](#screenshot)
 - [Contact](#contact)
 
 ## Project Description
@@ -49,6 +50,19 @@ The Agriculture Presentation Application is a web-based platform that offers use
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request.
+
+## Screenshot
+![Ekran görüntüsü 2024-07-29 160100](https://github.com/user-attachments/assets/00dce28e-460a-4602-a500-4d5ff0bf5e30)
+![Ekran görüntüsü 2024-07-29 160108](https://github.com/user-attachments/assets/59c80f4f-189e-47b6-b956-c7634b5f8bd1)
+![Ekran görüntüsü 2024-07-29 160114](https://github.com/user-attachments/assets/996b210f-befa-4aa8-888d-8834a28b2803)
+![Ekran görüntüsü 2024-07-29 160125](https://github.com/user-attachments/assets/c258cc42-b125-408a-ad41-d7201f1c7ebd)
+![Ekran görüntüsü 2024-07-29 160225](https://github.com/user-attachments/assets/ab95ea36-ab2d-43b5-aa1a-58c028a89b80)
+![Ekran görüntüsü 2024-07-29 160242](https://github.com/user-attachments/assets/c399ef61-b0e6-43cd-9f9f-def76376cbe1)
+![Ekran görüntüsü 2024-07-29 160246](https://github.com/user-attachments/assets/035dbc1c-a92f-4410-9ae4-765f9e80082e)
+![Ekran görüntüsü 2024-07-29 160250](https://github.com/user-attachments/assets/d7f017fc-d94a-4011-90a6-7c5c2e4786f9)
+![Ekran görüntüsü 2024-07-29 160257](https://github.com/user-attachments/assets/e48041a1-d4eb-4ca1-b1f3-d5da7c3512aa)
+![Ekran görüntüsü 2024-07-29 160329](https://github.com/user-attachments/assets/98cb4549-22c1-45d0-ab1a-1cd06b31143b)
+
 
 ## Contact
 For any inquiries or issues, please contact [omerfaruk.isiq@gmail.com].
